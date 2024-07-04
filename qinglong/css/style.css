@@ -1,0 +1,322 @@
+@font-face {
+  font-family: chinese;
+  src: url('../fonts/CHINESETAKEAWAY.ttf');
+}
+@font-face {
+  font-family: ruler;
+  src: url('../fonts/Chinese_Ruler.ttf');  
+}
+@font-face {
+  font-family: chineseT;
+  src: url('../fonts/Chinese\ Takeaway.ttf');  
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+    user-select: none;
+    background-color: #000 !important;
+  }
+  .bgi{
+    height: 100vh;
+  }
+  html{
+    line-height: 1rem;
+    font-size: 16px;
+    scroll-behavior: smooth;
+    font-family: 'ruler', sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  a{
+    color: white !important;
+    text-decoration: none !important;
+  }
+  p{
+    font-family:'ruler' !important;
+  }
+  #text{
+    font-size: 1.2rem !important;
+  }
+
+  h1{
+    font-size: 2rem !important;
+    font-weight: 500;
+    color: #fff !important;
+    font-family: 'chinese' !important;
+  }
+  h2{
+    font-size: 2rem !important;
+    font-weight: 500;
+    color: #fff !important;
+    font-family: 'chinese' !important;
+  }
+  #tokenomics h2{
+    font-size: 1.5rem !important ;
+  }
+  #about h2{
+    font-size: 3rem;
+    font-family: 'ruler', sans-serif !important;
+  }
+  h3{
+    font-size: 1.5rem !important;
+    font-weight: 500;
+    font-family: 'ruler' !important;
+  }
+
+  li {
+    list-style: none;
+  }
+  #ctext{
+    font-family:'chinese' !important;
+    font-size: 3rem;
+    font-weight: 500;
+    color: #fff;
+  }
+
+  .navBar{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    margin-left: auto;
+    position: relative;
+    padding: 1rem;
+    border-radius: 0 0 2rem 2rem;
+    background:#FF5733;
+    width: 100%;
+  }
+  .links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2rem;
+    margin-top: auto;
+    list-style: none;
+    font-weight: 600;
+  }
+  .links a{
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .confirmed {
+    font-size: .9rem !important;
+    font-family: 'ruler';
+    font-weight: 200;
+    color: greenyellow !important;
+    opacity: 0;
+    margin: 0 !important;
+  }
+  .confirmed.show{
+    opacity: 1 !important;
+  }
+
+
+ .intro p{
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  font-family: 'ruler', sans-serif !important;
+  
+ }
+ .bgi {
+  background: url("../images/hero.jpg");
+  background-repeat:no-repeat ;
+  background-size: cover;
+ }
+
+ .button{
+      padding: 7px 25px;
+      font-size: 18px;
+      font-weight: 600;
+      font-family: 'ruler' !important;
+      text-align: center;
+      text-decoration: none;
+      background-color: #0389D6; 
+      color: #ffffff;
+      border: 2px solid #0389D6;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+ }
+ .button:hover {
+  transform: scale(0.8);
+}
+
+  .hero-img{
+    width: 100%;
+  }
+
+.ca-div{
+  padding: .9rem .3rem 0 .3rem;
+  background-color: #0389D6;
+  border-radius: 36px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all ease 0.2s 0s;
+}
+.ca-div p{
+  font-size:1rem !important;
+  display: inline-block;
+}
+
+
+
+
+#about{
+  background:url("../images/about.jpg");
+  width: 100%;
+  background-size: contain;
+}
+#about h2{
+  font-size: 2rem;
+  font-family: 'chinese', sans-serif !important;
+  font-weight: 600;
+  color: #fff;
+}
+#about p{
+  font-size: 1.4rem;
+  font-family: 'ruler', sans-serif !important;
+  font-weight: 600;
+  text-shadow: 2px 2px 2px #0389D6;
+  color: #fff;
+}
+
+
+.tbg{
+  background:url("../images/tokenomics.webp");
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5; 
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+}
+.tokenomics{
+  position: relative;
+  width: 100%;
+}
+
+.scroll{
+position: relative;
+}
+.scroll p{
+  position: absolute;
+  color: #fff;
+  font-size: 3rem;
+  top: 40%;
+  right: 15%;
+  font-family: 'chineseT' !important;
+}
+.s-1 p{
+  right: 25%;
+}
+.s-2 p{
+  right: 30%;
+}
+.footer{
+  background-color: #000;
+}
+.footer p{
+  font-weight: 500;
+  font-family: 'ruler' !important;
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+}
+
+  @media screen and (max-width:480px) {
+   
+    .s-3 p{
+      right: 13% !important;
+    }
+    .s-1 p{
+      right: 20% !important;
+    }
+    .s-2 p{
+      right: 30% !important;
+    }
+    h1{
+      font-size: .3rem !important;
+    }
+    #text{
+      font-size: 1rem !important;
+    }
+    .drop-down{
+      display: block;
+    }
+    #about p{
+      font-size: .8rem !important;
+      font-weight: 500 !important;
+      color: #fff;
+    }
+    h1{
+      font-size: 3rem !important;
+    }
+    
+    #about{
+      width: 100%;
+
+    }
+
+     #supply{
+      font-size: 1rem !important;
+    }
+  }
+  @media screen and (max-width:992px) {
+    .scroll p{
+      right: 23% !important;
+      font-size: 1.5rem !important;
+    }
+    .s-1 p{
+      right: 30% !important;
+      font-size: 1.5rem !important;
+    }
+    .s-2 p{
+      right: 40% !important;
+      font-size: 1.5rem !important;
+    }
+    #about p{
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: #fff;
+    }
+    .navBar .navBtn, .icon-sm{
+      display: block;
+    }
+  .drop-down{
+      display: block;
+    }
+  }
+
+
+  #icons{
+    color: #fff;
+    font-size: 2rem;
+  }
+  #toTop{
+    color: #fff;
+    font-size: 2rem;
+    padding: .07rem .6rem !important;
+    background-color: #29298473;
+    display: none;
+    position: fixed;
+    z-index: 100;
+    cursor: pointer;
+    border-radius: .4rem;
+    bottom: 10px;
+    right: 30px;
+  }
+  
+  
